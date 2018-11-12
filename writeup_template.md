@@ -1,12 +1,9 @@
 # **Finding Lane Lines on the Road** 
 
-<<<<<<< HEAD
+
 ## Self Driving Car
-||||||| merged common ancestors
-## Writeup Template
-=======
+
 ## Udacity Self Driving Car Nanodegree 
->>>>>>> 7c99acd5ffe7a905f5aa5003ba94643e8b0c6ff0
 
 ### This document describe the methods to find the lane lands.
 
