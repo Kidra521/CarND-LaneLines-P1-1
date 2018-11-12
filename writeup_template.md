@@ -1,21 +1,32 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
+## Self Driving Car
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+### This document describe the methods to find the lane lands.
 
 ---
 
 **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+* Color selection. The channel threshold should be properly tuned.
+* Region masking to find the Region Of Interest(ROI). Remove other stuff.
+* Turn the RGB to GrayScale.
+* Image noise elimination.
+* Edge detection. Use Canny, and just cv2.canny().
+* Hough transform. Tune the parameters to get proper lane line.
+* Some linear regression to eliminate noise segment.
 
 
 [//]: # (Image References)
-
+[image0]: ./examples/course/image0.png "Origin"
 [image1]: ./examples/grayscale.jpg "Grayscale"
+[image2]: ./examples/course/image2.png "Edge"
+[image3]: ./examples/course/image3.png "Hough_bad"
+[image4]: ./examples/course/image4.png "Hough_good"
+
+![alt text][image0]
+![alt text][image1]![alt text][image2]![alt text][image3]![alt text][image4]
 
 ---
 
