@@ -32,6 +32,8 @@ The tools you have are color selection, region of interest selection, grayscalin
 [grayscale]: /examples/grayscaleimage.jpg "pureGrayScale"
 [grayscale_blur]: /examples/grayscaleblur.jpg "GrayScale_Removenoise"
 [grayscale_noise]: /examples/grayscalenoise.jpg "GrayScale_noise"
+[edgedetection_noblur]: /examples/edgedetection_noblur.jpg "edgedetection_noblur"
+[edgedetection_blur]: /examples/edgedetection_blur.jpg "edgedetection_blur"
 
 ![alt text][image0]
 ![alt text][image1]![alt text][image2]![alt text][image3]![alt text][image4]
