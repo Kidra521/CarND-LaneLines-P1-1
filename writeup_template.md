@@ -5,20 +5,22 @@
 
 ## Udacity Self Driving Car Nanodegree 
 
-### This document describe the methods to find the lane lands.
+### This document describe the methods to find the lane lands. 
 
 ---
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
+The tools you have are color selection, region of interest selection, grayscaling, Gaussian smoothing, Canny Edge Detection and Hough Tranform line detection. The goals / steps of this project are the following:
 * Color selection. The channel threshold should be properly tuned.
 * Region masking to find the Region Of Interest(ROI). Remove other stuff.
 * Turn the RGB to GrayScale.
 * Image noise elimination.
 * Edge detection. Use Canny, and just cv2.canny().
 * Hough transform. Tune the parameters to get proper lane line.
-* Some linear regression to eliminate noise segment.
+* Some linear regression to eliminate noise segment,connect/average/extrapolate the line segments.
+* Generate new image files and highlight the laneline on it.
+* Manage the lanelines object data for further utility.
 
 
 [//]: # (Image References)
@@ -27,6 +29,9 @@ The goals / steps of this project are the following:
 [image2]: ./examples/course/image2.png "Edge"
 [image3]: ./examples/course/image3.png "Hough_bad"
 [image4]: ./examples/course/image4.png "Hough_good"
+[grayscale]: /examples/grayscaleimage.jpg "pureGrayScale"
+[grayscale_blur]: /examples/grayscaleblur.jpg "GrayScale_Removenoise"
+[grayscale_noise]: /examples/grayscalenoise.jpg "GrayScale_noise"
 
 ![alt text][image0]
 ![alt text][image1]![alt text][image2]![alt text][image3]![alt text][image4]
@@ -59,3 +64,7 @@ Another shortcoming could be ...
 A possible improvement would be to ...
 
 Another potential improvement could be to ...
+
+### 4. What happen to the grayscale GaussianBlur is implemented?
+![alt text][grayscale]![alt text][grayscale_blur]![alt text][grayscale_noise]
+After the cv2.GaussianBlur(), we could see the picture seems less clear, but from the different between these two pics we can see GaussianBlur can remove much noise, and it is helpful for next step.
