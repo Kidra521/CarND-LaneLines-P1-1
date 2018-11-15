@@ -68,5 +68,9 @@ A possible improvement would be to ...
 Another potential improvement could be to ...
 
 ### 4. What happen to the grayscale GaussianBlur is implemented?
-![alt text][grayscale]![alt text][grayscale_blur]![alt text][grayscale_noise]
+![grayscale][grayscale]
+![alt text][grayscale_blur]
+![alt text][grayscale_noise]
+![alt text][edgedetection_noblur]
+![alt text][edgedetection_blur]     
 After the cv2.GaussianBlur(), we could see the picture seems less clear, but from the different between these two pics we can see GaussianBlur can remove much noise, and it is helpful for next step.
